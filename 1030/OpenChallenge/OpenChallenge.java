@@ -13,6 +13,7 @@ public class OpenChallenge {
             if (line.equals(";")) break;     // 입력 끝
             sb.append(line).append('\n');     // 줄 유지(공백/문장부호 포함)
         }
+        sc.close();
         return sb.toString();
     }
 
@@ -44,3 +45,4 @@ public class OpenChallenge {
         printHistogram(cnt);
     }
 }
+
